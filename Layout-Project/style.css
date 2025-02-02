@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Default";
+  src: url(./bento-grid/assets/fonts/DMSans-VariableFont_opsz_wght.ttf)
+    format(truetype);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Default", sans-serif;
+  font-weight: 400;
+}
+.container {
+  gap: 3.5%;
+  width: 70%;
+  height: 98%;
+  display: grid;
+  grid-template-areas:
+    "left left left top top top top top top right right right"
+    "left left left top top top top top top right right right"
+    "left left left top top top top top top right right right"
+    "left left left top top top top top top right right right"
+    "left left left top-bottom top-bottom top-bottom top-bottom2 top-bottom2 top-bottom2 right right right"
+    "left left left top-bottom top-bottom top-bottom top-bottom2 top-bottom2 top-bottom2 right right right"
+    "left-bottom left-bottom left-bottom top-bottom top-bottom top-bottom top-bottom2 top-bottom2 top-bottom2 right right right"
+    "left-bottom left-bottom left-bottom top-bottom top-bottom top-bottom top-bottom2 top-bottom2 top-bottom2 right right right"
+    "left-bottom left-bottom left-bottom top-bottom-bottom top-bottom-bottom top-bottom-bottom right-bottom right-bottom right-bottom right-bottom right-bottom right-bottom"
+    "left-bottom left-bottom left-bottom top-bottom-bottom top-bottom-bottom top-bottom-bottom right-bottom right-bottom right-bottom right-bottom right-bottom right-bottom"
+    "left-bottom left-bottom left-bottom top-bottom-bottom top-bottom-bottom top-bottom-bottom right-bottom right-bottom right-bottom right-bottom right-bottom right-bottom"
+    "left-bottom left-bottom left-bottom top-bottom-bottom top-bottom-bottom top-bottom-bottom right-bottom right-bottom right-bottom right-bottom right-bottom right-bottom";
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.container div {
+  color: white;
+}
+.box {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    gap: 2%;
+    grid-template-areas:
+      "left"
+      "top"
+      "top-bottom"
+      "top-bottom2"
+      "left-bottom"
+      "top-bottom-bottom"
+      "right"
+      "right-bottom";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}

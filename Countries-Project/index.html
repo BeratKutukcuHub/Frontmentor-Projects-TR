@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries | Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container" id="container">
+        <div class="header-container" id="header">
+          <h3>Where in the world?</h3>
+          <span id="span-theme">
+            <img src="./countriesapi/toggle-off-solid.svg" style="width: 5%" />
+            <h5>Dark Mode</h5>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-main" id="container-main">
+        <div class="container-countries">
+          <div class="search-filter">
+            <div class="search">
+              <img src="./countriesapi/eye-solid.svg" />
+              <input
+                id="search"
+                type="text"
+                placeholder="Aramak istedğiniz ülke..."
+              />
+            </div>
+            <div class="filter" id="filter">
+              <button class="filter-input">
+                Bir Kıta Seç
+                <img
+                  src="./countriesapi/circle-chevron-down-solid.svg"
+                  style="width: 10%"
+                />
+              </button>
+              <div class="options" id="options">
+                <div class="region">Africa</div>
+                <div class="region">Europe</div>
+                <div class="region">Americas</div>
+                <div class="region">Asia</div>
+                <div class="region">Oceania</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-flags" id="container-flags"></div>
+        <div class="paginations" id="paginations"></div>
+      </div>
+      <div
+        class="container-detail"
+        id="container-detail"
+        style="display: flex; width: 100; justify-content: center"
+      ></div>
+    </main>
+    <script src="./home.js"></script>
+  </body>
+</html>

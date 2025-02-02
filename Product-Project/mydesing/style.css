@@ -1,0 +1,128 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: MyFont;
+}
+@font-face {
+  font-family: MyFont;
+  src: url(../productlist/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf)
+    format(truetype);
+}
+body {
+  background-color: rgb(255, 244, 255);
+}
+hr {
+  opacity: 30%;
+}
+.container-base {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 85%;
+  height: 85%;
+  gap: 5%;
+  display: flex;
+}
+.container-left {
+  flex-basis: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.container-left-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-rows: repeat(3, 4fr);
+  gap: 8%;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10%;
+}
+.grid-item-top {
+  flex-basis: 66%;
+  position: relative;
+}
+.grid-item-top-addcart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.grid-item-container-calc {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  background-color: rgb(182, 37, 37);
+  color: whitesmoke;
+}
+.addcart-stil {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  border-radius: 25px;
+  padding: 3%;
+  border: 1px solid red;
+  background-color: white;
+  bottom: -5%;
+  width: 70%;
+}
+.addcart-stil p {
+  cursor: pointer;
+}
+.addcart-stil-calc {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25%;
+  border-radius: 25px;
+  padding: 3%;
+  border: 1px solid red;
+  background-color: rgb(152, 18, 18);
+  color: white;
+  bottom: -5%;
+  width: 70%;
+}
+.grid-item-bottom {
+  flex-basis: 33%;
+}
+.grid-item-top-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container-right {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+}
+.right-container {
+  width: 100%;
+  padding: 10% 5%;
+  min-height: 350px;
+  background-color: white;
+  border-radius: 20px;
+}
+.right-item {
+  display: flex;
+  flex-direction: column;
+}
+.right-item-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}

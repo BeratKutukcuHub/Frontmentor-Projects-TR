@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./ticketdesing/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: MyFont;
+  box-sizing: border-box;
+}
+#gradient-text {
+  background: linear-gradient(to bottom right, hsl(7, 88%, 67%), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container-first-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.container-first-section p {
+  font-size: 18px;
+  opacity: 50%;
+}
+.input {
+  padding: 15px 0px;
+  background-color: rgba(128, 128, 128, 0.397);
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  width: 60%;
+  font-size: 16px;
+  color: whitesmoke;
+  padding-left: 10px;
+}
+.button {
+  padding: 12px 0px;
+  background-color: hsl(7, 88%, 67%);
+  color: hsl(248, 71%, 15%);
+  width: 62%;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-second-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-first-section h1 {
+  font-size: 40px;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+  color: whitesmoke;
+}
+
+input:-webkit-autofill:focus {
+  background-color: transparent !important;
+}
+
+input:-webkit-autofill::first-line {
+  color: whitesmoke;
+}
+@media (max-width: 800px) {
+  .container-first-section {
+    width: 65%;
+  }
+  .container-first-section h1 {
+    font-size: 28px;
+  }
+  .container-first-section p {
+    font-size: 13px;
+  }
+  .container-second-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Side</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    style="
+      color: whitesmoke;
+      position: relative;
+      z-index: 999;
+      max-height: auto;
+      min-height: 100vh;
+    "
+  >
+    <div>
+      <img
+        style="position: absolute; top: 50%; right: 25%; z-index: -1"
+        src="./ticketdesing/assets/images/pattern-circle.svg"
+        alt=""
+      />
+      <img
+        src="./ticketdesing/assets/images/background-desktop.png"
+        style="
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+          top: 0px;
+          left: 0px;
+          z-index: -2;
+        "
+      />
+      <img
+        src="./ticketdesing/assets/images/pattern-lines.svg"
+        style="
+          object-fit: initial;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+        "
+        alt=""
+      />
+      <div style="width: 100%">
+        <img
+          src="./ticketdesing/assets/images/pattern-squiggly-line-bottom.svg"
+          style="
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            opacity: 80%;
+            z-index: -1;
+            width: 60%;
+          "
+        />
+      </div>
+      <img
+        src="./ticketdesing/assets/images/pattern-squiggly-line-top.svg"
+        style="position: absolute; right: 0%; top: 5%; z-index: -1"
+      />
+    </div>
+    <header style="font-family: MyFont; width: 100%">
+      <nav style="display: flex; justify-content: center; width: 100%">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+          "
+        >
+          <img src="./ticketdesing/assets/images/logo-mark.svg" alt="" />
+          <h3>Coding Conf</h3>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="container"
+        style="
+          width: 100%;
+          margin-top: 4%;
+          height: auto;
+          padding-bottom: 4%;
+          height: 100%;
+        "
+      >
+        <div class="container-first-section">
+          <h1 id="header">Your Journey to Coding Conf 2025 Starts Here!</h1>
+
+          <p id="header-content">
+            Secure your spot at next year's biggest coding conference
+          </p>
+        </div>
+        <div
+          id="container-ticket"
+          style="
+            width: 100%;
+            display: none;
+            justify-content: center;
+            margin-top: 3%;
+            height: 100%;
+          "
+        ></div>
+        <div class="container-second-section">
+          <form
+            id="form-id"
+            enctype="multipart/form-data"
+            style="
+              margin-top: 30px;
+              gap: 15px;
+              width: 100%;
+              display: flex;
+              height: 545px;
+              flex-direction: column;
+              align-items: center;
+            "
+          >
+            <div style="display: flex; justify-content: baseline; width: 60%">
+              <label>Upload Avatar</label>
+            </div>
+            <div
+              style="
+                padding: 10px 0px;
+                border-radius: 10px;
+                height: 20%;
+                border: 2px dashed rgba(245, 245, 245, 0.571);
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+              "
+            >
+              <div style="padding: 10px">
+                <input
+                  id="upload"
+                  type="file"
+                  style="border: none; display: none"
+                />
+                <img
+                  id="uploadimg"
+                  src="./ticketdesing/assets/images/icon-upload.svg"
+                  alt="upload"
+                  style="
+                    padding: 7px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background-color: rgba(128, 128, 128, 0.397);
+                    cursor: pointer;
+                  "
+                />
+              </div>
+
+              <label style="opacity: 60%; font-size: 16px">
+                Drag and drop or click to upload
+              </label>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: flex-start;
+                width: 60%;
+                gap: 10px;
+                align-items: center;
+              "
+            >
+              <img
+                src="./ticketdesing/assets/images/icon-info.svg"
+                id="form-img"
+              />
+              <p style="font-size: 10px; opacity: 60%">
+                Upload your photo (JPG or PNG, max size: 500KB)
+              </p>
+            </div>
+            <div class="box" id="fullName-box">
+              <label style="align-self: baseline; margin-left: 20%"
+                >Fullname</label
+              >
+
+              <input
+                type="text"
+                class="input"
+                name="fullName"
+                id="form-input"
+              />
+              <div
+                style="
+                  display: none;
+                  justify-content: flex-start;
+                  width: 60%;
+                  gap: 10px;
+                  align-items: center;
+                  color: rgb(146, 14, 14);
+                "
+              >
+                <img
+                  src="./ticketdesing/assets/images/icon-info.svg"
+                  id="form-img"
+                />
+                <p style="font-size: 10px">Must be more than 10 characters</p>
+              </div>
+            </div>
+            <div class="box" id="email-box">
+              <label style="align-self: baseline; margin-left: 20%">
+                Email Address
+              </label>
+              <input
+                placeholder="example@gmail.com"
+                type="email"
+                class="input"
+                name="email"
+                id="form-input"
+              />
+              <div
+                style="
+                  display: none;
+                  color: rgb(146, 14, 14);
+                  justify-content: flex-start;
+                  width: 60%;
+                  gap: 10px;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./ticketdesing/assets/images/icon-info.svg"
+                  id="form-img"
+                />
+                <p style="font-size: 10px">
+                  You must enter your email address.
+                </p>
+              </div>
+            </div>
+            <div class="box" id="github-box">
+              <label style="align-self: baseline; margin-left: 20%">
+                Github Username
+              </label>
+              <input
+                placeholder="@yourusername"
+                type="text"
+                class="input"
+                name="github"
+                id="form-input"
+              />
+              <div
+                style="
+                  color: rgb(146, 14, 14);
+                  display: none;
+                  justify-content: flex-start;
+                  width: 60%;
+                  gap: 10px;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./ticketdesing/assets/images/icon-info.svg"
+                  id="form-img"
+                />
+                <p style="font-size: 10px; opacity: 100%">
+                  Enter your github link (optional)
+                </p>
+              </div>
+            </div>
+
+            <button class="button" type="submit" style="cursor: pointer">
+              Generate My Ticket
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="./home.js"></script>
+  </body>
+</html>

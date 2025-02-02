@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desing | Top</title>
+  </head>
+  <body>
+    <div class="container-base">
+      <div class="container">
+        <div class="container-left">
+          <h1 onclick="handleUpdate()">Desserts</h1>
+          <div class="container-left-grid" id="container-grid">
+            <template id="template-products">
+              <div class="grid-item">
+                <div class="grid-item-top">
+                  <img
+                    id="grid-img"
+                    class="grid-item-top-img"
+                    src="../productlist/assets/images/image-brownie-desktop.jpg"
+                  />
+                  <div
+                    class="grid-item-top-addcart"
+                    id="grid-addtocart"
+                    style="display: flex"
+                  >
+                    <div class="addcart-stil">
+                      <img
+                        src="../productlist/assets/images/icon-add-to-cart.svg"
+                      />
+                      <p>Add to cart</p>
+                    </div>
+                  </div>
+                  <div
+                    class="grid-item-container-calc"
+                    id="grid-calc"
+                    style="display: none"
+                  >
+                    <div class="addcart-stil-calc" id="calc-items">
+                      <img
+                        style="flex-basis: 15%"
+                        id="decrement"
+                        src="../productlist/assets/images/icon-decrement-quantity.svg"
+                      />
+                      <img
+                        style="flex-basis: 15%"
+                        id="increment"
+                        src="../productlist/assets/images/icon-increment-quantity.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item-bottom" id="grid-description"></div>
+              </div>
+            </template>
+          </div>
+        </div>
+
+        <div class="container-right">
+          <div class="container-right-base" style="width: 100%">
+            <h2 id="cart-calc" style="color: rgb(199, 43, 43)">Your Cart(0)</h2>
+            <div class="right-container" id="right-container">
+              <template id="template-cart">
+                <div class="right-item">
+                  <div class="right-item-details" id="right-item-details">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        padding: 5% 0%;
+                      "
+                    >
+                      <h5>Classic Tiramisu</h5>
+                      <span style="display: flex">
+                        <h5>1x -</h5>
+                        <h5>@ $5.50 $5.50</h5>
+                      </span>
+                    </div>
+                    <div>
+                      <img
+                        src="../productlist/assets/images/icon-remove-item.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </template>
+              <hr style="margin-top: 5%" />
+            </div>
+            <div
+              style="
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                margin: 0% 8%;
+                font-size: 24px;
+                align-items: center;
+              "
+            >
+              <h6>Total Price :</h6>
+              <h3 id="totalPrice">$0</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./home.js"></script>
+  </body>
+</html>

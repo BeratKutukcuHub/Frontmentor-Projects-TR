@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step | Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-step">
+          <div class="content">
+            <div class="content-left">
+              <img
+                class="content-left-img"
+                src="./multistep/assets/images/bg-sidebar-desktop.svg"
+              />
+              <div class="container-sidebar">
+                <div class="step">
+                  <div class="step-left selected">
+                    <h4>1</h4>
+                  </div>
+                  <div class="step-right">
+                    <h4 class="opacity">STEP 1</h4>
+                    <h4>YOUR INFO</h4>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step-left">
+                    <h4>2</h4>
+                  </div>
+                  <div class="step-right">
+                    <h4 class="opacity">STEP 2</h4>
+                    <h4>SELECT PLAN</h4>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step-left">
+                    <h4>3</h4>
+                  </div>
+                  <div class="step-right">
+                    <h4 class="opacity">STEP 3</h4>
+                    <h4>ADD-ONS</h4>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step-left">
+                    <h4>4</h4>
+                  </div>
+                  <div class="step-right">
+                    <h4 class="opacity">STEP 4</h4>
+                    <h4>SUMMARY</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-right" id="content-right">
+              <div class="content-right-header">
+                <h1>Personal info</h1>
+                <p>
+                  Fill in the information below so we can create your account.
+                </p>
+              </div>
+              <form class="content-right-form" id="step-1">
+                <div class="form-div">
+                  <div style="display: flex; justify-content: space-between">
+                    <h4>Name</h4>
+                    <h5 class="no-look check">Bu alan boş geçilemez.</h5>
+                  </div>
+                  <input
+                    id="name"
+                    type="text"
+                    class="form-input"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="form-div">
+                  <div style="display: flex; justify-content: space-between">
+                    <h4>E-Mail</h4>
+                    <h5 class="no-look check">Bu alan boş geçilemez.</h5>
+                  </div>
+                  <input
+                    id="email"
+                    type="text"
+                    class="form-input"
+                    placeholder="Johndoe_99@gmail.com"
+                  />
+                </div>
+                <div class="form-div">
+                  <div style="display: flex; justify-content: space-between">
+                    <h4>Phone Number</h4>
+                    <h5 class="no-look check">Bu alan boş geçilemez.</h5>
+                  </div>
+                  <input
+                    id="phone"
+                    type="tel"
+                    class="form-input"
+                    placeholder="534 355 40 42"
+                  />
+                </div>
+              </form>
+              <div
+                class="content-right-form"
+                id="step-2"
+                style="justify-content: flex-start"
+              >
+                <div class="step2-header">
+                  <div class="step2-header-blocks">
+                    <img
+                      src="./multistep/assets/images/icon-arcade.svg"
+                      width="30%"
+                    />
+                    <div class="step-class">
+                      <h4 style="font-weight: bold">Arcade</h4>
+                      <div
+                        id="infos"
+                        style="opacity: 30%; font-size: 14px; display: flex"
+                      >
+                        $<span>9</span>/
+                        <p style="opacity: 75%">mo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2-header-blocks">
+                    <img
+                      src="./multistep/assets/images/icon-advanced.svg"
+                      width="30%"
+                    />
+
+                    <div class="step-class">
+                      <h4 style="font-weight: bold">Advanced</h4>
+                      <h5 style="opacity: 30%; font-size: 14px; display: flex">
+                        $<span>12</span>/
+                        <p style="opacity: 75%">mo</p>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="step2-header-blocks">
+                    <img
+                      src="./multistep/assets/images/icon-pro.svg"
+                      width="30%"
+                    />
+                    <div class="step-class">
+                      <h4 style="font-weight: bold">Pro</h4>
+                      <h5 style="opacity: 30%; font-size: 14px; display: flex">
+                        $<span>15</span>/
+                        <p style="opacity: 75%">mo</p>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="step2-footer" id="step2-footer">
+                  <h3 style="font-weight: bold">Monthly</h3>
+                  <i class="fa-solid fa-toggle-off fa-lg" id="timeCalc"></i>
+                  <h3 style="font-weight: bold; opacity: 35%">Yearly</h3>
+                </div>
+              </div>
+
+              <div class="content-right-form" id="step-3">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    gap: 2%;
+                    flex-direction: column;
+                    justify-content: space-around;
+                  "
+                >
+                  <div
+                    id="check-div"
+                    style="display: flex; padding: 4%; border-radius: 10px"
+                    class="step3-no-border"
+                  >
+                    <div
+                      style="
+                        flex-basis: 80%;
+                        display: flex;
+                        gap: 4%;
+                        align-items: center;
+                      "
+                    >
+                      <input
+                        type="checkbox"
+                        id="form-input"
+                        value="1"
+                        name="online"
+                        style="width: 17px; margin-left: 20px"
+                      />
+                      <div
+                        style="display: flex; flex-direction: column; gap: 5px"
+                      >
+                        <h5>Online Service</h5>
+                        <h5 style="opacity: 30%">
+                          Access to multiplayer games
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        flex-basis: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                      "
+                    >
+                      <h5 style="opacity: 30%">+1/mo</h5>
+                    </div>
+                  </div>
+                  <div
+                    id="check-div"
+                    style="display: flex; padding: 4%; border-radius: 10px"
+                    class="step3-no-border"
+                  >
+                    <div
+                      style="
+                        flex-basis: 80%;
+                        display: flex;
+                        gap: 4%;
+                        align-items: center;
+                      "
+                    >
+                      <input
+                        type="checkbox"
+                        id="form-input"
+                        value="2"
+                        name="larger"
+                        style="width: 17px; margin-left: 20px"
+                      />
+                      <div
+                        style="display: flex; flex-direction: column; gap: 5px"
+                      >
+                        <h5>Larger Storage</h5>
+                        <h5 style="opacity: 30%">Extra 1TB of cloud save</h5>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        flex-basis: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                      "
+                    >
+                      <h5 style="opacity: 30%">+2/mo</h5>
+                    </div>
+                  </div>
+                  <div
+                    id="check-div"
+                    style="display: flex; padding: 4%; border-radius: 10px"
+                    class="step3-no-border"
+                  >
+                    <div
+                      style="
+                        flex-basis: 80%;
+                        display: flex;
+                        gap: 4%;
+                        align-items: center;
+                      "
+                    >
+                      <input
+                        type="checkbox"
+                        value="2"
+                        name="custom"
+                        id="form-input"
+                        style="width: 17px; margin-left: 20px"
+                      />
+                      <div
+                        style="display: flex; flex-direction: column; gap: 5px"
+                      >
+                        <h5>Customizable Profile</h5>
+                        <h5 style="opacity: 30%">
+                          Custom theme on your profile
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        flex-basis: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                      "
+                    >
+                      <h5 style="opacity: 30%">+2/mo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-right-form" id="step-4">
+                <div
+                  class="container-step4"
+                  style="width: 100%; display: flex; flex-direction: column"
+                ></div>
+              </div>
+              <div class="content-right-footer">
+                <button id="back" class="btn-next">Go Back</button>
+                <button id="next" class="btn-back">Next Step</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./home.js"></script>
+  </body>
+</html>
